@@ -1,2 +1,3 @@
 FROM ubuntu
-RUN ls
+RUN apt update && apt install -y curl git xz-utils
+RUN curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
